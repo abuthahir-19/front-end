@@ -1,0 +1,113 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  background-color: #010409;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow: hidden;
+      margin-top: 5rem;
+      box-sizing: border-box;
+  }
+  
+  .div2 {
+      height: 200px;
+      max-width: 350px;
+      margin: 25px;
+      transition: transform 350ms;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 8px 6px -6px rgb(121 121 160);
+  }
+  
+  div.Supervisor {
+      border-top: 3px solid rgb(61, 245, 236);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      position: relative;
+      top: 130px;
+      animation-name: super;
+      animation-duration: 1.4s;
+  }
+  
+  div.team-builder {
+      border-top: 3px solid rgb(255, 70, 70);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      position: relative;
+      animation-name: team;
+      animation-duration: 1.4s;
+  }
+  
+  div.karma {
+      border-top: 3px solid rgb(235, 189, 62);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      position: relative;
+      animation-name: karma;
+      animation-duration: 1.4s;
+  }
+  
+  div.calculator {
+      border-top: 3px solid rgb(61, 156, 245);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      position: relative;
+      top: 130px;
+      animation-name: calculator;
+      animation-duration: 1.4s;
+  }
+  .div2:hover {
+      transform: scale(1.04, 1.04);
+  }
+  
+  div.box-container {
+      height: 100%;
+      padding: 10px;
+      object-fit: cover;
+      box-sizing: border-box;
+      width: 100%;
+  }
+  
+  #heading, #para {
+      margin: 7px;
+  }
+  
+  a{
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #000;
+  }
+  
+  img {
+      float: right;
+      padding: 24px 22px;
+  }
+
+  @keyframes super {
+      0%{left: -500px; top: 130px;}
+      100% {left: 1px; top: 130px;}
+  }
+
+  @keyframes calculator {
+      0% {right: -500px; top: 130px}
+      100% {right: 1px; top: 130px}
+  }
+
+  @keyframes team {
+      0% {top: -250px}
+      100% {top: 1px;}
+  }
+
+  @keyframes karma {
+      0% {bottom: -250px}
+      100% {bottom: 1px;}
+  }
+}
