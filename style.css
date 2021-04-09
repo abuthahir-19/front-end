@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* html {
+html {
   background-color: #010409;
-} */
+}
 
 @media screen and (min-width: 600px) {
   
