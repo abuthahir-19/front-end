@@ -8,9 +8,7 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-  .title-container h2 {
-    color: #fff;
-  }
+  
   .container {
     justify-content: center;
     display: flex;
